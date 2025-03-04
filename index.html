@@ -11,28 +11,32 @@
     <style>
         body {
             margin: 0;
-            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            width: 100vw;
-            background-color: black;
+            background-color: #000;
+        }
+
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Modelo 3D com AR ativado -->
-    <model-viewer alt="Astronauta" 
-                  src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
-                  ar 
-                  ar-modes="webxr scene-viewer quick-look"
-                  environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr" 
-                  shadow-intensity="1" 
-                  camera-controls 
-                  touch-action="pan-y"
-                  style="width: 100vw; height: 100vh;">
+    <!-- Modelo 3D com botão de AR -->
+    <model-viewer 
+        alt="Astronauta" 
+        src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look"
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        shadow-intensity="1" 
+        camera-controls 
+        touch-action="pan-y">
     </model-viewer>
 
 </body>
